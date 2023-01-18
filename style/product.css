@@ -1,0 +1,133 @@
+#navbar {
+    border: 5px solid blue;
+    display: flex;
+    background-color: rgb(34, 34, 34);
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#navbar img {
+    width: 15%;
+}
+
+
+#container {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#sortfilter {
+    width: 28%;
+}
+
+.cars {
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.card {
+    border: 1px solid lightgray;
+
+}
+
+.card>img {
+    width: 100%;
+    background-image: url("https://www.zoomcar.com/img/marketplace-background.png");
+    background-size: contain;
+}
+
+#left {
+    width: 90%;
+    border: 2px solid lightgray;
+    padding: 0px 20px 40px 20px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+#sortby>div {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 80px
+}
+
+#sortby {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#type {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#type>div {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 80px;
+    text-align: center;
+}
+
+#type img {
+    width: 30%;
+
+}
+
+#rating {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+
+#rating>div {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 50px;
+    text-align: center;
+}
+
+#seat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+
+#seat>div {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 50px;
+    text-align: center;
+}
+
+#fuel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#fuel>div {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 50px;
+    text-align: center;
+}
+
+#lefttop {
+    width: 90%;
+    padding: 30px 20px 40px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.range {
+    width: 95%;
+}
