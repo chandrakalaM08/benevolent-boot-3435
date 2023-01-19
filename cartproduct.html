@@ -8,6 +8,7 @@
     <title>Cargo Cart</title>
 
     <link rel="stylesheet" href="/style/cart.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -33,9 +34,10 @@
         <div id="left">
             <div>
                 <img src="" alt="Car" id="photo">
+                
             </div>
-            <div id="detail"></div>
             <div id="leftbottom">
+                
                 <div>
                     <h3>Location Details</h3>
                     <iframe
@@ -67,13 +69,13 @@
             <div></div>
             <div>
                 <h3>TRIP PROTECTION PACKAGE</h3>
-                <input type="radio" name="one" value="basic"> <label for="text">Basic(₹100)</label>
+                <input type="radio" name="one" value="100" id="money1"> <label for="text">Basic(₹100)</label>
                 <p>You pay up to 10% less in case of any damage</p>
 
-                <input type="radio" name="one" value="standard"> <label for="text">Standard(₹250)</label>
+                <input type="radio" name="one" value="250" id="money2"> <label for="text">Standard(₹250)</label>
                 <p>You pay up to 25% less in case of any damage</p>
 
-                <input type="radio" name="one" value="peace"> <label for="text">Peace of Mind(₹500)</label>
+                <input type="radio" name="one" value="500" id="money3"> <label for="text">Peace of Mind(₹500)</label>
                 <p>You pay up to 35% less in case of any damage</p>
             </div>
             <div>
@@ -90,12 +92,14 @@
                 </div>
             </div>
             <div>
-                <div>Total Amount here</div>
+                <div>
+                    <h2 id="total"></h2>
+                </div>
                 <div>
                     <h4>Apply Coupan</h4>
                 </div>
             </div>
-            <button>PROCEED TO PAY</button>
+            <button id="paybutton">PROCEED TO PAY</button>
         </div>
 
     </div>
