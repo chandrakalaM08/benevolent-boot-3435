@@ -12,79 +12,105 @@
 </head>
 
 <body>
-    <div id="container">
+    <div id="img">
         <img src="https://www.zoomcar.com/build/fb65fcc43b8bededb813e093ea2d47d3.svg" alt="Car">
-        <div id="loginCont">
 
-            <div id="signup">
+    </div>
+    <div id="container">
+        <div id="signupdiv">
                 <h1>Sign Up for Free</h1>
 
-                <form action="">
-                    <label>
-                        First Name<span class="req">*</span>
-                    </label>
-                    <input type="text" required autocomplete="off" />
-
-                    <br>
-
-                    <label>
-                        Last Name<span class="req">*</span>
-                    </label>
-                    <input type="text" required autocomplete="off" />
-                    <br>
-                    <label>
-                        Email Address<span class="req">*</span>
-                    </label>
-                    <input type="email" required autocomplete="off" />
-                    <br>
-
-                    <label>
-                        Phone<span class="req">*</span>
-                    </label>
-                    <input type="number" required autocomplete="off" />
-                    <br>
-                    <label>
-                        Set A Password<span class="req">*</span>
-                    </label>
-                    <input type="password" required autocomplete="off" />
-
-                    <br>
-                    <button type="submit" class="button button-block" />Sign Up</button>
+                <form action="/" id="signupForm">
+                
+                    <table>
+                        <tr>
+                            <td>
+                                <label>
+                                    First Name<span class="req">*</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" required autocomplete="off" id="first" />
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Last Name<span class="req">*</span>
+                                    </label>
+                            </td>
+                            <td>
+                                <input type="text" required autocomplete="off" id="last" />
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Email Address<span class="req">*</span>
+                                    </label>
+                            </td>
+                            <td>
+                                <input type="email" required autocomplete="off" id="email" />
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>Phone<span class="req">*</span></td>
+                                <td><input type="number" required autocomplete="off" id="phone" /></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Set A Password<span class="req">*</span>
+                                    </label>
+                            </td>
+                            <td><input type="password" required autocomplete="off" id="pass" /></td>
+                            </tr>
+                            </table>
+                            <button type="submit" class="signupbutton" />Sign Up</button>
 
                 </form>
 
             </div>
 
-            <div id="login">
+            <div id="logindiv">
                 <h1>Welcome Back!</h1>
 
-                <form action="/" method="post">
+                <form action="/" method="post" id="loginForm">
 
-                    <label>
-                        Email Address<span class="req">*</span>
-                    </label>
-                    <input type="email" required autocomplete="off" />
+                    <table>
+                        <tr>
+                            <td><label>
+                                    Email Address<span class="req">*</span>
+                                </label>
+                                </td>
+                                <td>
+                                    <input type="email" required autocomplete="off" id="enteremail" />
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>
+                                            Password<span class="req">*</span>
+                                        </label>
+                                </td>
+                                <td>
+                                    <input type="password" required autocomplete="off" id="enterpass" />
+                                </td>
+                                </tr>
+                                </table>
 
-                    <br>
-                    <label>
-                        Password<span class="req">*</span>
-                    </label>
-                    <input type="password" required autocomplete="off" />
-
-
-                    <h5 class="forgot"><a href="#">Forgot Password?</a></h5>
-
-                    <button class="button button-block" />Log In</button>
+                    <button class="loginbutton" />Log In</button>
 
                 </form>
+                <p id="forgot"><a>Forgot password</a></p>
 
             </div>
 
-        </div>
+    
 
     </div>
 
-    </div>
+</div>
 </body>
 <script src="/javaScript/login.js"> </script>
 

@@ -1,15 +1,17 @@
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
 #navbar {
-
     display: flex;
     background-color: black;
-        justify-content: start;
+    justify-content: start;
     align-items: center;
     color: white;
 }
 
 #navbar>div:nth-child(1) {
     margin-left: 20px;
-    width: 2%;
+    width: 3%;
 }
 
 #navbar>div:nth-child(2) {
@@ -22,7 +24,7 @@
 }
 
 #navbar>div:nth-child(2)>img {
-    width: 11%;
+    width: 14%;
 }
 
 #navbar>div:nth-child(3) {
@@ -36,11 +38,9 @@
 #navbar>div:nth-child(3)>button {
     width: 35%;
     border-radius: 25px;
-    height: 45px;
+    height: 55px;
     font-weight: 800;
 }
-
-
 
 #container {
     display: flex;
@@ -48,6 +48,9 @@
     justify-content: space-around;
 }
 
+#detailsof {
+    border: 5px solid blue
+}
 
 #container>div:nth-child(1) {
     border: solid red 5px;
@@ -78,13 +81,10 @@
     justify-content: space-between;
 }
 
-#leftbottom>div {
 
-    border: 5px solid green;
-}
 
-#leftbottom img {
-    width: 85%;
+#leftbottom {
+    width: 95%;
 }
 #left>div:nth-child(1) {
 

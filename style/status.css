@@ -2,6 +2,46 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+#navbar {
+    display: flex;
+    background-color: black;
+    justify-content: start;
+    align-items: center;
+    color: white;
+}
+
+#navbar>div:nth-child(1) {
+    margin-left: 20px;
+    width: 3%;
+}
+
+#navbar>div:nth-child(2) {
+
+    width: 65%;
+}
+
+#navbar>div:nth-child(1)>img {
+    width: 80%;
+}
+
+#navbar>div:nth-child(2)>img {
+    width: 14%;
+}
+
+#navbar>div:nth-child(3) {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#navbar>div:nth-child(3)>button {
+    width: 35%;
+    border-radius: 25px;
+    height: 55px;
+    font-weight: 800;
+}
 h1 {
     font-size: 45px;
     color: #1c7936;

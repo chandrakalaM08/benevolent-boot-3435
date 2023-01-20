@@ -1,16 +1,14 @@
-
 #navbar {
-
     display: flex;
     background-color: black;
-        justify-content: start;
+    justify-content: start;
     align-items: center;
     color: white;
 }
 
 #navbar>div:nth-child(1) {
     margin-left: 20px;
-    width: 2%;
+    width: 3%;
 }
 
 #navbar>div:nth-child(2) {
@@ -23,7 +21,7 @@
 }
 
 #navbar>div:nth-child(2)>img {
-    width: 11%;
+    width: 14%;
 }
 
 #navbar>div:nth-child(3) {
@@ -37,7 +35,7 @@
 #navbar>div:nth-child(3)>button {
     width: 35%;
     border-radius: 25px;
-    height: 45px;
+    height: 55px;
     font-weight: 800;
 }
 
