@@ -1,16 +1,44 @@
 #navbar {
-    border: 5px solid green;
+
     display: flex;
-    background-color: rgb(34, 34, 34);
-    justify-content: space-between;
+    background-color: black;
+        justify-content: start;
     align-items: center;
     color: white;
 }
 
-#navbar img {
-    width: 15%;
+#navbar>div:nth-child(1) {
+    margin-left: 20px;
+    width: 2%;
 }
 
+#navbar>div:nth-child(2) {
+
+    width: 65%;
+}
+
+#navbar>div:nth-child(1)>img {
+    width: 80%;
+}
+
+#navbar>div:nth-child(2)>img {
+    width: 11%;
+}
+
+#navbar>div:nth-child(3) {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#navbar>div:nth-child(3)>button {
+    width: 35%;
+    border-radius: 25px;
+    height: 45px;
+    font-weight: 800;
+}
 
 
 
@@ -57,4 +85,16 @@
 
 #leftbottom img {
     width: 85%;
+}
+#left>div:nth-child(1) {
+
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#photo {
+    width: 100%;
 }

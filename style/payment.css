@@ -1,0 +1,153 @@
+#navbar {
+
+    display: flex;
+    background-color: black;
+    justify-content: start;
+    align-items: center;
+    color: white;
+}
+
+#navbar>div:nth-child(1) {
+    margin-left: 20px;
+    width: 2%;
+}
+
+#navbar>div:nth-child(2) {
+
+    width: 65%;
+}
+
+#navbar>div:nth-child(1)>img {
+    width: 80%;
+}
+
+#navbar>div:nth-child(2)>img {
+    width: 11%;
+}
+
+#navbar>div:nth-child(3) {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#navbar>div:nth-child(3)>button {
+    width: 35%;
+    border-radius: 25px;
+    height: 45px;
+    font-weight: 800;
+}
+
+#head {
+    width: 20%;
+    margin: auto;
+
+}
+
+#heading {
+
+    display: inline-block;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #1f1f1f;
+}
+
+#payment {
+    display: flex;
+    width: 70%;
+    padding-left: 15px;
+    justify-content: space-between;
+    margin: auto;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#left {
+
+    width: 25%
+}
+
+.leftimg {
+    width: 85%
+}
+
+#left>div>div:nth-child(1) {
+
+    width: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#left>div {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-content: center;
+
+}
+
+#left>div:nth-child(1) {
+    margin-top: 50px;
+}
+
+#left>div>div:nth-child(2)>p {
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: rgb(58, 55, 55);
+}
+
+#left>div>div:nth-child(2)>p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+    color: rgb(31, 31, 31);
+}
+
+
+#bottom {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 45%;
+}
+
+#bottom img {
+    width: 60%
+}
+
+#rightside {
+    display: flex;
+}
+
+#qrdiv {
+    width: 40%;
+    padding: 90px 0px 0px 30px;
+}
+
+#qrcode {
+    width: 80%;
+}
+
+.vl {
+    border-left: 2px solid gray;
+    height: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#upi {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90%
+}
+
+#upi img {
+    width: 15%
+}
