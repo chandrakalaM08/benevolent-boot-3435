@@ -1,14 +1,42 @@
 #navbar {
-    border: 5px solid blue;
     display: flex;
-    background-color: rgb(34, 34, 34);
+        background-color: black;
+        justify-content: start;
+        align-items: center;
+        color: white;
+    }
+    
+    #navbar>div:nth-child(1) {
+        margin-left: 20px;
+        width: 3%;
+    }
+    
+    #navbar>div:nth-child(2) {
+    
+        width: 65%;
+    }
+    
+    #navbar>div:nth-child(1)>img {
+        width: 80%;
+    }
+    
+    #navbar>div:nth-child(2)>img {
+        width: 14%;
+    }
+    
+    #navbar>div:nth-child(3) {
+    display: flex;
+    width: 30%;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    margin-right: 20px;
 }
 
-#navbar img {
-    width: 15%;
+#navbar>div:nth-child(3)>button {
+    width: 35%;
+    border-radius: 25px;
+    height: 55px;
+    font-weight: 800;
 }
 
 #top {

@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cargo Cart</title>
+    <title>Cart</title>
 
     <link rel="stylesheet" href="/style/cart.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
     <div id="navbar">
         <div>
-            <img src="./images/ham.png" alt="ham">
+            <i class="fa-solid fa-bars"></i>
         </div>
     
         <div>
             <img src="./images/CarGO (2).png" alt="Error Loading Image">
-            </div>
-            <div>
-                <button>
-                    <h4>Become a Host</h4>
-                </button>
-            <h3>Username / Login</h3>
-            <i class="fa fa-user" style="font-size:40px;""></i>
+        </div>
+        <div>
+            <button>
+                <h4>Become a Host</h4>
+            </button>
+            <h3 style="color:white">Username / Login</h3>
+            <i class="fa fa-user" style="font-size:40px;"></i>
         </div>
     
     </div>
@@ -34,6 +34,7 @@
         <div id="left">
             <div>
                 <img src="" alt="Car" id="photo">
+                <div id="detailsof"></div>
                 
             </div>
             <div id="leftbottom">
@@ -48,14 +49,18 @@
                 </div>
                 <div>
                     <h3>Keep In Mind</h3>
-                    <h4>Driving License Mandatory</h4>
+                    <h4><i class="fa-solid fa-id-card"></i>Driving License Mandatory</h4>
 
-                    <h4>Fare & Fuel Policy</h4>
+                    <h4><i class="fa-solid fa-gas-pump"></i>Fare & Fuel Policy</h4>
                     <p>Fare is inclusive of all taxes. Kindly return the car at the same fuel level as the trip start
                         time</p>
                     <a href="#">See Details</a>
-                    <h4>Cancellation Policy</h4>
+                    <h4><i class="fa-regular fa-rectangle-xmark"></i>Cancellation Policy</h4>
                     <p>Hassle free cancellations and refunds at nominal charges</p>
+                    <a href="#">See Details</a>
+                    <h4><i class="fa-regular fa-file-contract"></i>Agreement Policy</h4>
+                    <p><i class="fa-regular fa-square-check"></i>I hereby agree to the terms and conditions of the Lease Agreement with Host
+                    </p>
                     <a href="#">See Details</a>
                 </div>
 
@@ -64,17 +69,18 @@
         <div id="right">
             <div>
                 <h3>Other Charges</h3>
-                <p> 🚚Convenience Fee ₹99</p>
+                <p> <i class="fa-solid fa-truck"></i>Convenience Fee ₹99</p>
             </div>
             <div></div>
             <div>
                 <h3>TRIP PROTECTION PACKAGE</h3>
-                <input type="radio" name="one" value="100" id="money1"> <label for="text">Basic(₹100)</label>
+            <i class="fa-solid fa-a"></i>
+            <input type="radio" name="one" value="100" id="money1"></i> <label for="text">Basic(₹100)</label>
                 <p>You pay up to 10% less in case of any damage</p>
-
+                <i class="fa-solid fa-b"></i>
                 <input type="radio" name="one" value="250" id="money2"> <label for="text">Standard(₹250)</label>
                 <p>You pay up to 25% less in case of any damage</p>
-
+                <i class="fa-solid fa-c"></i>
                 <input type="radio" name="one" value="500" id="money3"> <label for="text">Peace of Mind(₹500)</label>
                 <p>You pay up to 35% less in case of any damage</p>
             </div>
@@ -93,10 +99,14 @@
             </div>
             <div>
                 <div>
+                    <input type="text" placeholder="Apply Coupon" />
                     <h2 id="total"></h2>
                 </div>
                 <div>
-                    <h4>Apply Coupan</h4>
+    <h4><i class="fa fa-ticket" style="font-size:20px; color:green"></i> Apply Coupon: "CARGO200" and Get flat 200 off
+    </h4>
+    
+    <h4><i class="fa fa-ticket" style="font-size:20px; color:green"></i> Apply Coupon: "CARGONEW" and Get flat 200 off</h4>
                 </div>
             </div>
             <button id="paybutton">PROCEED TO PAY</button>
