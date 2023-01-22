@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,23 +16,8 @@
 
 <body>
 
-    <body>
-<div id="navbar">
-    <div>
-        <i class="fa-solid fa-bars"></i>
-        </div>
-
-    <div>
-        <img src="./images/CarGO (2).png" alt="Error Loading Image">
+    <div id="header">
     </div>
-    <div>
-        <button>
-            <h4>Become a Host</h4>
-        </button>
-        <h3 style="color:white">Username / Login</h3>
-        <i class="fa fa-user" style="font-size:40px;"></i>
-        </div>
-</div>
 
     <div id =" container">
                     <div id="head">
@@ -84,7 +71,7 @@
                             <div id="rightside">
                                 <div id="upi">
                                     <div>
-                                        <h3>Select a UPI App <i class="fa-solid fa-user-shield"></i></h3>
+                                        <h3>Select a UPI App <i class="fa-solid fa-user-shield" style="font-size:40px; color:green"></i></h3>
                                     </div>
                                     <div>
                                         <h3>PREFERRED PAYMENT OPTIONS</h3>
@@ -116,7 +103,7 @@
                                         <img src="https://www.zoomcar.com/build/3ef19a1071cc8527266cd278b3782406.svg"
                                             alt="error">
                                     </div>
-
+                                        <button class="pbutton" id="ppbtn">Pay : <span id="headingin"></span></button>
                                 </div>
                             </div>
                         </div>
@@ -148,5 +135,11 @@
     </body>
 
     <script src=" /javaScript/payment.js"> </script>
+
+    <script>
+        $(function () {
+            $('#header').load('nav.html');
+        })
+    </script>
 
 </html>

@@ -1,7 +1,11 @@
+<!-- #include file="nav.html" -->
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,26 +17,10 @@
 </head>
 
 <body>
-
-    <div id="navbar">
-        <div>
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    
-        <div>
-            <img src="./images/CarGO (2).png" alt="Error Loading Image">
-        </div>
-        <div>
-            <button>
-                <h4>Become a Host</h4>
-            </button>
-            <h3 style="color:white">Username / Login</h3>
-            <i class="fa fa-user" style="font-size:40px;"></i>
-        </div>
-    
+    <div id="header">
     </div>
 
-    <body onload="myFunction()">
+    <body>
 
         <div id="loader">
         
@@ -42,10 +30,18 @@
             <h1>Payment Successful!</h1>
             <h2>Thank you for choosing CarGo!</h2>
             <h3>DRIVE YOUR DREAM</h3>
-            <h4>Click here to go back to orders</h4>
+            <a href="/index.html">
+                <h4 style="color:black">Click here to go back to Home Page</h4>
+            </a>
         </div>
 
     </body>
     <script src="/javaScript/status.js"> </script>
+
+<script>
+    $(function () {
+        $('#header').load('nav.html');
+    })
+</script>
 
 </html>

@@ -1,3 +1,4 @@
+
 #img>img {
     display: block;
     width: 30%;
@@ -47,4 +48,57 @@
         color: white;
         margin-top: 15px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+/*  Medium Screen */
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+
+
+    #container {
+        margin: auto;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    #container>div {
+        width: 80%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+}
+
+/* Small screen */
+@media only screen and (min-width:340px) and (max-width: 767px) {
+
+
+    #container {
+        margin: auto;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    #container>div {
+        width: 100%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    #img>img {
+        display: block;
+        width: 72%;
+        margin: auto;
+    }
 }
