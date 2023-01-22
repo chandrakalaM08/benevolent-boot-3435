@@ -3,6 +3,8 @@
 
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,22 +16,9 @@
 </head>
 
 <body>
-<div id="navbar">
-    <div>
-        <i class="fa-solid fa-bars"></i>
-            </div>
-            
-            <div>
-            <img src="./images/CarGO (2).png" alt="Error Loading Image">
-            </div>
-            <div>
-                <button>
-                    <h4>Become a Host</h4>
-                </button>
-                <h3>Username / Login</h3>
-            <i class="fa fa-user" style="font-size:40px;""></i>
-            </div>
-        </div>
+    <div id="header">
+    </div>
+
     <div id="container">
 
         <div id="top">
@@ -43,18 +32,19 @@
             </div>
 
             <div id="topthree">
-                <div>
-                    <h2>⇋</h2>
+                <div id="one3">
+                    <h2><i class="fa-solid fa-right-left"></i></h2>
                     <p>Round Trip</p>
                 </div>
-                <div>
-                    <h2>✈</h2>
+                <div id="two3">
+                    <h2><i class="fa-solid fa-plane-departure"></i></h2>
                     <p>Airport Round Trip</p>
                 </div>
             </div>
-            <div id="topfour"><input type="text" placeholder="🟢Pick Up City,Airport,Address or Hotel"><br>
-                <button>FIND CARS</button>
+            <div class="center" id="place">
+                <input type="text" placeholder="🟢Pick Up City,Airport,Address or Hotel" required>
             </div>
+            <div class="center" id="find"><button type="submit">FIND CARS</button></div>
 
         </div>
 
@@ -62,6 +52,7 @@
             <div>
                 <h1>CHOOSE FROM OUR WIDE RANGE OF CARS</h1>
             </div>
+            <div id="slideshow"></div>
         </div>
 
         <div id="middleTwo">
@@ -84,7 +75,7 @@
             </div>
             <div id="three">
                 <button>
-                    < </button>
+                    </button>
                         <div>
                             <img src="https://zoomcar-assets.zoomcar.com/images/original/d09afb8f29763525cd9823221791be7188b31460.png?1672044204"
                                 alt="Error">
@@ -368,6 +359,13 @@
 
 
 </body>
-<script src="/javaScript/index.js"> </script>
+<script src="/javaScript/index.js">
+</script>
+
+<script>
+    $(function () {
+        $('#header').load('nav.html');
+    })
+</script>
 
 </html>

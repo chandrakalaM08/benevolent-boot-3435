@@ -23,6 +23,7 @@ signupForm.addEventListener("submit", (event) => {
   userData.push(userObj);
 
   localStorage.setItem("users", JSON.stringify(userData));
+  alert("Account created successfully!");
 });
 
 ///////// writing code for login here
@@ -44,15 +45,18 @@ loginForm.addEventListener("submit", (event) => {
       enteredPass.value === element.password
     ) {
       loggedin_flag = true;
-      location.href = "http://127.0.0.1:5500/cartproduct.html";
       return;
-    } else if (
-      enteredEmail.value !== element.mailid &&
-      enteredPass.value !== element.password
-    ) {
-      alert("Please enter correct credential");
     }
   });
+
+  if (loggedin_flag === true) {
+    localStorage.setItem("loggedin", JSON.stringify(enteredEmail.value));
+
+    location.href = "index.html";
+  } else {
+    localStorage.setItem("loggedin", JSON.stringify(loggedin_flag));
+    alert("Please enter correct credential");
+  }
 });
 
 ////// Forgot password

@@ -1,46 +1,4 @@
-* {
-    font-family: 'Noto Sans TC', sans-serif;
-}
-#navbar {
-    display: flex;
-    background-color: black;
-    justify-content: start;
-    align-items: center;
-    color: white;
-}
 
-#navbar>div:nth-child(1) {
-    margin-left: 20px;
-    width: 3%;
-}
-
-#navbar>div:nth-child(2) {
-
-    width: 65%;
-}
-
-#navbar>div:nth-child(1)>img {
-    width: 80%;
-}
-
-#navbar>div:nth-child(2)>img {
-    width: 14%;
-}
-
-#navbar>div:nth-child(3) {
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 20px;
-}
-
-#navbar>div:nth-child(3)>button {
-    width: 35%;
-    border-radius: 25px;
-    height: 55px;
-    font-weight: 800;
-}
 
 #head {
     width: 20%;
@@ -60,7 +18,8 @@
 
 #payment {
     display: flex;
-    width: 70%;
+    border-radius: 5px;
+        width: 65%;
     padding-left: 15px;
     justify-content: space-between;
     margin: auto;
@@ -129,7 +88,7 @@
 }
 
 #qrdiv {
-    width: 40%;
+    width: 50%;
     padding: 90px 0px 0px 30px;
 }
 
@@ -152,4 +111,14 @@
 
 #upi img {
     width: 15%
+}
+.pbutton {
+    width: 80%;
+    color: white;
+    background-color: green;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: 700;
+    height: 50px;
+    font-size: 15px;
 }

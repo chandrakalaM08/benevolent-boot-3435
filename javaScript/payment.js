@@ -1,3 +1,13 @@
+let flag = JSON.parse(localStorage.getItem("loggedin"));
+
+if (flag === false) {
+  window.location.href = "login.html";
+}
+
+let billamount = localStorage.getItem("totalbill");
+let headingtext = document.querySelector("#headingin");
+headingtext.textContent = `₹${billamount}`;
+
 let payUPI = document.getElementById("payviaupi");
 
 let payCard = document.getElementById("payviacard");
@@ -8,7 +18,14 @@ let payNet = document.getElementById("payvianet");
 
 let makePayment = document.getElementById("upi");
 
+let ppbutton = document.getElementById("ppbtn");
+ppbutton.addEventListener("click", () => {
+  location.href = "status.html";
+});
+
 payCard.addEventListener("click", () => {
+  ppbutton.innerHTML = "";
+  ppbutton.style.backgroundColor = "white";
   displayCard();
 });
 
@@ -45,7 +62,8 @@ function displayCard() {
 
   let div2 = document.createElement("div");
   let pay = document.createElement("button");
-  pay.textContent = "PAY";
+  pay.className = "pbutton";
+  pay.textContent = "PAY" + "  " + `₹${billamount}`;
 
   pay.addEventListener("click", () => {
     location.href = "http://127.0.0.1:5500/status.html";
@@ -57,6 +75,8 @@ function displayCard() {
 }
 
 payWallet.addEventListener("click", () => {
+  ppbutton.innerHTML = "";
+  ppbutton.style.backgroundColor = "white";
   displayWallet();
 });
 
@@ -79,7 +99,8 @@ function displayWallet() {
 
   let div2 = document.createElement("div");
   let pay = document.createElement("button");
-  pay.textContent = "PAY";
+  pay.className = "pbutton";
+  pay.textContent = "PAY" + "  " + `₹${billamount}`;
 
   pay.addEventListener("click", () => {
     location.href = "http://127.0.0.1:5500/status.html";

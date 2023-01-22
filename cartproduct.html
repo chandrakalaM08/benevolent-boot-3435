@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,23 +15,9 @@
 </head>
 
 <body>
-    <div id="navbar">
-        <div>
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    
-        <div>
-            <img src="./images/CarGO (2).png" alt="Error Loading Image">
-        </div>
-        <div>
-            <button>
-                <h4>Become a Host</h4>
-            </button>
-            <h3 style="color:white">Username / Login</h3>
-            <i class="fa fa-user" style="font-size:40px;"></i>
-        </div>
-    
+    <div id="header">
     </div>
+
 
     <div id="container">
         <div id="left">
@@ -45,21 +34,26 @@
                         src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d112110.34198408946!2d77.16946624242641!3d28.586328452441776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390d1b9a2459ed47%3A0xb725c5047baa432!2sIGI%20Airport%20Terminal-3%2C%20Terminal%203%2C%20Delhi!3m2!1d28.555325!2d77.085746!4m5!1s0x390cefd77f16398b%3A0xc6b36d28e314a853!2sMahagun%20Moderne%2C%20Mantova%20St%2C%20Sector%2078%2C%20Noida%2C%20Uttar%20Pradesh%20201307!3m2!1d28.5627462!2d77.38746479999999!5e0!3m2!1sen!2sin!4v1674136650836!5m2!1sen!2sin"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <p style="color: #5160c2">Exact car location will be shared post booking</p>
+                    <p style="border-radius: 5px;font-weight:600px;color: #44509e;background-color: rgb(205, 166, 241); font-size: small;">
+                        Exact car location
+                        will be shared
+                        post
+                        booking</p>
                 </div>
                 <div>
                     <h3>Keep In Mind</h3>
-                    <h4><i class="fa-solid fa-id-card"></i>Driving License Mandatory</h4>
+                    <h4><i class="fa-solid fa-id-card" style="font-size:20px; color:green"></i>Driving License Mandatory</h4>
 
-                    <h4><i class="fa-solid fa-gas-pump"></i>Fare & Fuel Policy</h4>
+                    <h4><i class="fa-solid fa-gas-pump" style="font-size:20px; color:green"></i>Fare & Fuel Policy</h4>
                     <p>Fare is inclusive of all taxes. Kindly return the car at the same fuel level as the trip start
                         time</p>
                     <a href="#">See Details</a>
-                    <h4><i class="fa-regular fa-rectangle-xmark"></i>Cancellation Policy</h4>
+                    <h4><i class="fa-regular fa-rectangle-xmark" style="font-size:20px; color:green"></i>Cancellation Policy</h4>
                     <p>Hassle free cancellations and refunds at nominal charges</p>
                     <a href="#">See Details</a>
-                    <h4><i class="fa-regular fa-file-contract"></i>Agreement Policy</h4>
-                    <p><i class="fa-regular fa-square-check"></i>I hereby agree to the terms and conditions of the Lease Agreement with Host
+                    <h4><i class="fa-regular fa-file-contract" style="font-size:20px; color:green"></i>Agreement Policy</h4>
+                    <p><i class="fa-regular fa-square-check" style="font-size:20px; color:green"></i>I hereby agree to the terms and
+                        conditions of the Lease Agreement with Host
                     </p>
                     <a href="#">See Details</a>
                 </div>
@@ -69,7 +63,7 @@
         <div id="right">
             <div>
                 <h3>Other Charges</h3>
-                <p> <i class="fa-solid fa-truck"></i>Convenience Fee ₹99</p>
+                <p> <i class="fa-solid fa-truck" style="font-size:20px; color:green"></i>Convenience Fee ₹99</p>
             </div>
             <div></div>
             <div>
@@ -99,7 +93,8 @@
             </div>
             <div>
                 <div>
-                    <input type="text" placeholder="Apply Coupon" />
+                    <input type="text" id="discount" placeholder="Apply Coupon" /> <button id="applybtn">Apply</button>
+                    <h5 id="msg"></h5>
                     <h2 id="total"></h2>
                 </div>
                 <div>
@@ -116,5 +111,11 @@
 
 </body>
 <script src="/javaScript/cart.js"> </script>
+
+<script>
+    $(function () {
+        $('#header').load('nav.html');
+    })
+</script>
 
 </html>

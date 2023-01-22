@@ -1,3 +1,12 @@
+let flag = JSON.parse(localStorage.getItem("loggedin"));
+
+let username = document.getElementById("navname");
+
+if (flag === false) {
+  window.location.href = "login.html";
+  username.textContent = "Login / SignUp";
+}
+
 let myCar = {};
 
 let myurl = document.URL;
@@ -12,7 +21,7 @@ async function fetchmyCar() {
     let response = await fetch(`${url}/${ids}`);
     response = await response.json();
     displaymyCar(response);
-    displaytotal(response);
+    displaytotal(response, 0, 0);
     myCar = response;
     console.log(response);
   } catch (error) {
@@ -60,12 +69,47 @@ payButton.addEventListener("click", () => {
   location.href = "http://127.0.0.1:5500/payment.html";
 });
 
-function displaytotal(myCar) {
+let insurance = 0;
+let radioA = document.getElementById("money1");
+radioA.addEventListener("click", () => {
+  displaytotal(myCar, radioA.value, 0);
+  insurance = +radioA.value;
+});
+
+let radioB = document.getElementById("money2");
+radioB.addEventListener("click", () => {
+  displaytotal(myCar, radioB.value, 0);
+  insurance = +radioB.value;
+});
+
+let radioC = document.getElementById("money3");
+radioC.addEventListener("click", () => {
+  displaytotal(myCar, radioC.value, 0);
+  insurance = +radioC.value;
+});
+
+function displaytotal(myCar, val, discount) {
   let convinence = 99;
   let priceamaount = myCar.price;
 
-  let totalcost = Number(priceamaount) + Number(convinence) - Number(200);
-  console.log(totalcost);
+  let totalcost =
+    Number(priceamaount) + Number(convinence) + Number(val) - Number(discount);
+
   let total = document.getElementById("total");
   total.innerText = "Total Payable:" + totalcost;
+  localStorage.setItem("totalbill", JSON.stringify(totalcost));
 }
+
+let applyCoupon = document.getElementById("applybtn");
+let alertmsg = document.getElementById("msg");
+let discount = document.getElementById("discount");
+applyCoupon.addEventListener("click", () => {
+  if (discount.value === "") {
+    alertmsg.innerText = "Please enter a discount coupon";
+  } else if (discount.value !== "CARGO200" && discount.value !== "CARGONEW") {
+    alertmsg.innerText = "Not a valid coupon";
+  } else if (discount.value === "CARGO200" || discount.value === "CARGONEW") {
+    displaytotal(myCar, insurance, 200);
+    alertmsg.innerText = "Coupan Applied!";
+  }
+});
