@@ -1,14 +1,14 @@
 let flag = JSON.parse(localStorage.getItem("loggedin"));
 
-console.log(flag);
-
-if (flag === false) {
-  window.location.href = "login.html";
-}
-
 let users = JSON.parse(localStorage.getItem("users"));
 
 let user = document.getElementById("navname");
+user.addEventListener("click", () => {
+  if (user.innerText === "LogIn / SignUp") {
+    location.href = "/login.html";
+  }
+});
+
 users.forEach((element) => {
   if (flag === element.mailid) {
     user.textContent = element.first + " " + element.last;
@@ -31,6 +31,6 @@ function myFunction() {
 let logout = document.querySelector("#logout");
 
 logout.addEventListener("click", () => {
-  flag = false;
+  localStorage.setItem("loggedin", JSON.stringify(false));
   location.href = "login.html";
 });

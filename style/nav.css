@@ -42,7 +42,7 @@
 
 #navname {
     font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
 }
 
 
@@ -69,6 +69,7 @@
     display: block;
     right: 0;
     top: 0;
+    font-size: 40px;
 
 }
 
@@ -87,7 +88,7 @@
     background-color: rgb(100, 101, 99);
     font-size: 20px;
     line-height: 35px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 #myLinks>div {
@@ -99,4 +100,53 @@
 .a {
     color: white;
     text-decoration: none;
+}
+/*  Medium Screen */
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+    #navbar>div:nth-child(2)>img {
+        width: 19%;
+    }
+
+    #navbar>div:nth-child(3)>button {
+        display: none
+    }
+
+    #navbar>div:nth-child(3) {
+        width: 40%
+    }
+
+    .topnav a.icon {
+
+        font-size: 30px;
+
+    }
+
+
+}
+
+
+
+/* Small screen */
+@media only screen and (min-width:340px) and (max-width: 767px) {
+    #navbar>div:nth-child(2)>img {
+        width: 30%;
+    }
+
+    #navbar>div:nth-child(3)>button {
+        display: none;
+    }
+
+    #navbar>div:nth-child(3) {
+        width: 80%
+    }
+
+    .topnav a.icon {
+
+        font-size: 25px;
+
+    }
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }

@@ -1,6 +1,6 @@
-let flag = JSON.parse(localStorage.getItem("loggedin"));
+let redirectFlag = JSON.parse(localStorage.getItem("loggedin"));
 
-if (flag === false) {
+if (redirectFlag === false) {
   window.location.href = "login.html";
 }
 
@@ -32,6 +32,10 @@ payCard.addEventListener("click", () => {
 function displayCard() {
   makePayment.innerHTML = "";
 
+  let formel = document.createElement("form");
+  formel.className = "myform";
+  formel.setAttribute("action", "/status.html");
+
   let h3 = document.createElement("h3");
   h3.innerText = "Enter Card details";
 
@@ -39,18 +43,21 @@ function displayCard() {
   cardnum.setAttribute("type", "number");
   cardnum.setAttribute("value", "Card Number");
   cardnum.setAttribute("placeholder", "Card Number");
+  cardnum.setAttribute("required", "");
 
   let exp = document.createElement("input");
-  exp.setAttribute("type", "number");
-  exp.setAttribute("value", "date");
+  exp.setAttribute("type", "text");
+  // exp.setAttribute("value", "date");
   exp.setAttribute("placeholder", "Expiry (MM/YY)");
+  exp.setAttribute("required", "");
 
   let cvv = document.createElement("input");
   cvv.setAttribute("type", "number");
   cvv.setAttribute("value", "cvv");
   cvv.setAttribute("placeholder", "CVV");
+  cvv.setAttribute("required", "");
 
-  let div1 = document.createElement("div");
+  // let div1 = document.createElement("div");
 
   let condition = document.createElement("input");
   condition.setAttribute("type", "checkbox");
@@ -58,20 +65,22 @@ function displayCard() {
   let text = document.createElement("p");
   text.textContent = "Securely save card details";
 
-  div1.append(condition, text);
+  // div1.append(condition, text);
 
-  let div2 = document.createElement("div");
+  // let div2 = document.createElement("div");
   let pay = document.createElement("button");
+  pay.setAttribute("type", "submit");
   pay.className = "pbutton";
   pay.textContent = "PAY" + "  " + `₹${billamount}`;
 
-  pay.addEventListener("click", () => {
-    location.href = "http://127.0.0.1:5500/status.html";
-  });
+  // pay.addEventListener("click", () => {
+  //   location.href = "http://127.0.0.1:5500/status.html";
+  // });
 
-  div2.append(pay);
+  formel.append(cardnum, exp, cvv, condition, text, pay);
+  // div2.append(pay);
 
-  makePayment.append(h3, cardnum, exp, cvv, div1, div2);
+  makePayment.append(h3, formel);
 }
 
 payWallet.addEventListener("click", () => {

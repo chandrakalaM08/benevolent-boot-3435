@@ -159,3 +159,58 @@
 .range {
     width: 95%;
 }
+
+/*  Medium Screen */
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+
+    .cars {
+        display: grid;
+        width: 45%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+    }
+
+    #left {
+        width: 120%;
+        border: 2px solid lightgray;
+        padding: 0px 20px 40px 20px;
+        margin-right: 40px;
+        margin-top: 20px;
+        border-radius: 7px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+}
+
+
+
+/* Small screen */
+@media only screen and (min-width:340px) and (max-width: 767px) {
+
+    .cars {
+        display: grid;
+        width: 55%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+    }
+
+    #left {
+
+        width: 100%;
+        margin-right: 20px;
+
+    }
+
+    #left>div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px
+    }
+
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}

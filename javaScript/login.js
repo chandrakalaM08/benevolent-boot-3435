@@ -24,6 +24,7 @@ signupForm.addEventListener("submit", (event) => {
 
   localStorage.setItem("users", JSON.stringify(userData));
   alert("Account created successfully!");
+  location.href = "/login.html";
 });
 
 ///////// writing code for login here

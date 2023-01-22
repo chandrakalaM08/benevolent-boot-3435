@@ -1,10 +1,7 @@
-let flag = JSON.parse(localStorage.getItem("loggedin"));
+let redirectFlag = JSON.parse(localStorage.getItem("loggedin"));
 
-let username = document.getElementById("navname");
-
-if (flag === false) {
+if (redirectFlag === false) {
   window.location.href = "login.html";
-  username.textContent = "Login / SignUp";
 }
 
 let myCar = {};

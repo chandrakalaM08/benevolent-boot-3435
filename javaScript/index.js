@@ -54,7 +54,7 @@ window.addEventListener("load", function () {
 
     slideshowElement.append(divdetail, imageTag);
     i++;
-  }, 6000);
+  }, 2500);
 });
 
 let round = document.getElementById("one3");
@@ -79,7 +79,8 @@ roundairport.addEventListener("mouseout", () => {
 
 ////FIND CARS
 
-let find = document.getElementById("find");
-find.addEventListener("click", () => {
-  location.href = "product.html";
-});
+// let find = document.getElementById("find");
+// find.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   location.href = "product.html";
+// });
