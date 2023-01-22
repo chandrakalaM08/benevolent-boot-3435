@@ -32,7 +32,7 @@ function displayCars(data) {
     card.className = "card";
 
     let link = document.createElement("a");
-    link.href = "http://127.0.0.1:5500/cartproduct.html?id=" + element.id;
+    link.href = "/cartproduct.html?id=" + element.id;
 
     link.className = "linking";
 

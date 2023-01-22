@@ -63,7 +63,7 @@ function displaymyCar(myCar) {
 let payButton = document.getElementById("paybutton");
 
 payButton.addEventListener("click", () => {
-  location.href = "http://127.0.0.1:5500/payment.html";
+  location.href = "/payment.html";
 });
 
 let insurance = 0;

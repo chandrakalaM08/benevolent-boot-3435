@@ -112,7 +112,7 @@ function displayWallet() {
   pay.textContent = "PAY" + "  " + `₹${billamount}`;
 
   pay.addEventListener("click", () => {
-    location.href = "http://127.0.0.1:5500/status.html";
+    location.href = "/status.html";
   });
 
   div2.append(pay);
